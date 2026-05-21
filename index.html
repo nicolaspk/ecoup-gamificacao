@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOUP</title>
+    <title>ECOUP | Gamificação Sustentável</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <div class="logo-container">
+            <h1>ECOUP</h1>
+        </div>
+        
+        <button id="btn-mobile" class="btn-mobile" aria-label="Abrir ou fechar menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+        
+        <nav id="menu-principal" aria-label="Navegação Principal">
+            <ul>
+                <li><a href="index.html" class="ativo" aria-current="page">Início</a></li>
+                <li><a href="paginas/sobre.html">Sobre</a></li>
+                <li><a href="paginas/faq.html">FAQ</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+                <li><a href="paginas/integrantes.html">Quem Somos</a></li>
+                <li><a href="paginas/simulador.html">Protótipo</a></li>
+                <li><a href="paginas/dashboard.html">Solução (Dashboard)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-texto">
+                <h2>O futuro sustentável rende benefícios reais.</h2>
+                <p>O sistema inteligente da <strong>ECOUP</strong> para a SoulUp transforma o seu impacto ambiental em Pontos Ecoa. Participe, suba no ranking e conquiste subsídios na sua fatura de energia.</p>
+                <a href="paginas/dashboard.html" class="btn-primary">Ver Análise e Solução</a>
+            </div>
+            <div class="hero-imagem">
+                <img src="img/hero-image.png" alt="Logo sustentável com planeta Terra, folhas verdes e circuitos tecnológicos em azul, representando tecnologia e meio ambiente.">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <article class="feature-card">
+                <div class="icon-placeholder" aria-hidden="true">🌱</div>
+                <h3>1. Ação no Dia a Dia</h3>
+                <p>Envie registros das suas atitudes sustentáveis pelo app.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon-placeholder" aria-hidden="true">🤖</div>
+                <h3>2. Validação pelo Algoritmo</h3>
+                <p>Nossa solução processa a ação e atribui uma pontuação justa.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon-placeholder" aria-hidden="true">⚡</div>
+                <h3>3. Recompensas</h3>
+                <p>Troque seus pontos acumulados por descontos reais.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido pela <strong>ECOUP</strong> para o Challenge SoulUp. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
