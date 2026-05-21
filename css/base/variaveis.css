@@ -1,0 +1,13 @@
+:root {
+    --cor-fundo-app: #0b132b; 
+    --cor-superficie: #1c2541; 
+    --cor-primaria: #00F5C8; 
+    --cor-primaria-hover: #00efc7;
+    --cor-secundaria: rgba(0, 245, 200, 0.1);
+    --cor-alerta: #ff3366; 
+    --cor-texto-principal: #ffffff;
+    --cor-texto-secundario: #a0aab2;
+    --brilho-neon: 0 0 15px rgba(0, 210, 138, 0.4);
+    --sombra-card: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --transicao: all 0.3s ease-in-out;
+}
