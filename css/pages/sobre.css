@@ -1,0 +1,73 @@
+.section-about {
+    margin-bottom: 35px;
+}
+
+.about-block p {
+    font-size: 1.1rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-image-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 25px auto 10px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 210, 138, 0.2);
+    box-shadow: var(--sombra-card);
+}
+
+.about-media {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tech-grid-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #121a2f;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transicao);
+}
+
+.roadmap-step.checked {
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.step-badge {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 1px solid var(--cor-primaria);
+}
+
+.step-content h3 {
+    font-size: 1.15rem;
+    color: var(--cor-texto-principal);
+    margin-bottom: 5px;
+}
