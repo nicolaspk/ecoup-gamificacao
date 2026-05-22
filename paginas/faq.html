@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOUP</title>
+    <title>SoulUp by ECOUP - FAQ</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <div class="logo-container">
+            <h1>ECOUP</h1>
+        </div>
+        
+        <button id="btn-mobile" class="btn-mobile" aria-label="Abrir ou fechar menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+        
+        <nav id="menu-principal" aria-label="Navegação Principal">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html" class="ativo" aria-current="page">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="integrantes.html">Quem Somos</a></li>
+                <li><a href="simulador.html">Protótipo</a></li>
+                <li><a href="dashboard.html">Solução (Dashboard)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section faq-section">
+            <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+            <p class="section-subtitle">Esclarecimentos gerais sobre o funcionamento do sistema de gamificação e os Pontos Ecoa.</p>
+            
+            <div class="faq-container">
+                
+                <article class="faq-item-card">
+                    <div class="faq-icon" aria-hidden="true">❓</div>
+                    <div class="faq-text">
+                        <h3>O que são os Pontos Ecoa?</h3>
+                        <p>Os Pontos Ecoa são a moeda virtual de engajamento do sistema SoulUp. Eles são atribuídos automaticamente (variando de 0 a 100) após o nosso Algoritmo validar uma ação sustentável real submetida por você na plataforma SoulUp.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item-card">
+                    <div class="faq-icon" aria-hidden="true">💡</div>
+                    <div class="faq-text">
+                        <h3>Como eu ganho o subsídio na conta de luz?</h3>
+                        <p>Os pontos que você acumula posicionam o seu perfil em um ranking geral. O usuário que atingir o topo do ranking de engajamento no ciclo vigente recebe, como recompensa máxima, o subsídio integral da sua fatura de energia elétrica.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item-card">
+                    <div class="faq-icon" aria-hidden="true">📱</div>
+                    <div class="faq-text">
+                        <h3>Como as minhas ações são validadas?</h3>
+                        <p>Você deve enviar um vídeo ou foto comprovando a ação sustentável (como reciclagem, uso de transporte público ou economia de recursos). O nosso sistema analisa o material utilizando algoritmos de reconhecimento para garantir a autenticidade e evitar fraudes antes de gerar a pontuação.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item-card">
+                    <div class="faq-icon" aria-hidden="true">🔒</div>
+                    <div class="faq-text">
+                        <h3>Os meus dados estão seguros?</h3>
+                        <p>Sim. A ECOUP desenvolveu o sistema com rigorosas regras de segurança. Adotamos validação e sanitização de dados, proteção de endpoints e minimização de dados coletados, separando informações pessoais das métricas analíticas de impacto ambiental.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido pela <strong>ECOUP</strong> para o desafio SoulUp. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
