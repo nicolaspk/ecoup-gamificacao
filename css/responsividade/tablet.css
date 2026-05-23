@@ -1,0 +1,82 @@
+@media (max-width: 1024px) {
+    .btn-mobile {
+        display: block; 
+    }
+
+    #menu-principal {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-superficie);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #menu-principal.menu-aberto {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: stretch;   
+        width: 100%;
+        gap: 8px; 
+        padding: 15px 5%; 
+    }
+
+    nav ul li { width: 100%; }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box; 
+        text-align: center; 
+        font-size: 1.1rem;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-row-top, 
+    .team-row-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .hero-texto h2 { font-size: 2.2rem; }
+
+    .dashboard-analysis,
+    .simulador-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .simulation-status-area { position: static; }
+    .simulation-main-area { padding: 30px 20px; }
+}
+
+@media (max-width: 600px) {
+    .roadmap-step {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .about-block p { text-align: left; }
+    
+    .faq-item-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    .faq-text p { text-align: center; }
+    .faq-item-card:hover { transform: translateY(-5px); }
+}
