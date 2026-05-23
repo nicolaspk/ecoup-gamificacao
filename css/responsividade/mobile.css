@@ -1,0 +1,122 @@
+@media (max-width: 480px) {
+    
+ 
+    .section-title { font-size: 1.8rem; }
+    .section-subtitle { font-size: 1rem; margin-bottom: 25px; }
+
+    .contact-card { padding: 25px 15px; }
+    .contact-card h3 { font-size: 1.3rem; }
+    .contact-email { font-size: 0.85rem; }
+
+
+    .card-member { padding: 20px 15px; max-width: 100%; }
+
+
+    .dashboard-metrics { grid-template-columns: 1fr; gap: 15px; }
+    .metric-card { padding: 20px 15px; }
+    .metric-value { font-size: 1.8rem; }
+    
+    .chart-container, .solution-container { padding: 25px 15px; }
+    .chart-label { width: 70px; font-size: 0.9rem; }
+
+    .modal-content {
+        width: 95%;
+        padding: 30px 15px;
+        margin: 0 auto;
+    }
+    .modal-content h2 { font-size: 1.4rem; margin-bottom: 15px; }
+    #modal-metric-value { font-size: 1.6rem; }
+    #modal-metric-value span { 
+        display: block; 
+        margin-top: 5px; 
+        margin-left: 0; 
+        font-size: 1.1rem;
+    }
+
+    .chart-row {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+    .chart-label { width: 100%; text-align: left; }
+    .chart-bar {
+        white-space: normal; 
+        font-size: 0.85rem;
+        padding: 10px;
+        text-align: center;
+    }
+    .solution-container h3 { font-size: 1.4rem; margin-bottom: 15px; }
+    .solution-container p { font-size: 0.95rem; text-align: left; margin-bottom: 15px; }
+    
+
+    .tech-grid-about {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+    .tech-item-card { padding: 20px 15px; }
+    .tech-item-card h3 { font-size: 1.25rem; }
+    .tech-item-card p { font-size: 0.95rem; }
+
+    .simulador-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%; 
+        gap: 20px;
+        box-sizing: border-box; 
+        margin: 0; 
+        padding: 0;
+    }
+
+    .simulation-main-area, 
+    .progresso-container {
+        width: 100%;
+        max-width: 100%; 
+        box-sizing: border-box; 
+        padding: 25px 15px;
+        margin: 0; 
+    }
+    
+    .simulation-main-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .progresso-header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 10px;              
+        margin-bottom: 15px;
+    }
+    
+    #eco-points-text {
+        font-size: 1.8rem;      
+        text-align: center;
+    }
+
+    .step-title {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .step-title span {
+        flex-shrink: 0; 
+        width: 36px;
+        height: 36px;
+        min-width: 36px; 
+        min-height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
