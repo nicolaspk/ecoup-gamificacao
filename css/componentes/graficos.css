@@ -1,0 +1,40 @@
+.chart-container, .solution-container {
+    background-color: #121a2f;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.css-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart-row {
+    display: flex;
+    align-items: center;
+}
+
+.chart-label {
+    width: 90px;
+    font-weight: bold;
+    color: var(--cor-texto-secundario);
+    font-size: 1.1rem;
+}
+
+.chart-bar {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-app);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: width 1.5s ease-in-out;
+}
+
+.bar-alerta {
+    background-color: var(--cor-alerta);
+    color: var(--cor-texto-principal);
+    box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
