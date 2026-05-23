@@ -1,0 +1,17 @@
+.contact-section {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-email {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
