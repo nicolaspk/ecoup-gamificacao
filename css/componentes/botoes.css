@@ -1,0 +1,62 @@
+.btn-primary {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-app);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: var(--transicao);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--brilho-neon);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-primaria-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 210, 138, 0.8);
+}
+
+.social-links-grid {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.link-social {
+    flex: 1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 8px;
+    transition: var(--transicao);
+    text-align: center;
+}
+
+.link-social.linkedin {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--cor-texto-principal);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-social.linkedin:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--cor-texto-principal);
+}
+
+.link-social.github {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--cor-texto-principal);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-social.github:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--cor-texto-principal);
+}
