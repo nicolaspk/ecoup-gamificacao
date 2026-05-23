@@ -1,0 +1,14 @@
+.feature-card {
+    background-color: var(--cor-superficie);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--sombra-card);
+    border-top: 4px solid var(--cor-primaria);
+    transition: var(--transicao);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--brilho-neon);
+}
