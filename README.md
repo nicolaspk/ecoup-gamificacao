@@ -5,7 +5,7 @@
 
 ## 🚀 Link do Repositório
 Acesso público ao código-fonte do projeto no GitHub:
-[Acessar o repositório ECOUP - SoulUp Gamificação](https://github.com/nicolaspk/ecoup-gamificacao.git)
+[Acessar o repositório ECOUP - Gamificação](https://github.com/nicolaspk/ecoup-gamificacao.git)
 
 ## 📸 Imagens e Representação do Projeto
 Abaixo encontram-se as principais interfaces do sistema que demonstram o seu funcionamento visual e interativo:
