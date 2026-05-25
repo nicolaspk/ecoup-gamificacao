@@ -1,0 +1,27 @@
+header {
+    background-color: var(--cor-superficie);
+    padding: 15px 5%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container h1 {
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-shadow: var(--brilho-neon);
+}

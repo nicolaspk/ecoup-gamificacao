@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-       const btnMobile = document.getElementById('btn-mobile');
+    const btnMobile = document.getElementById('btn-mobile');
     const menuPrincipal = document.getElementById('menu-principal');
 
     if (btnMobile && menuPrincipal) {
         btnMobile.addEventListener('click', function() {
-            // Liga e desliga a classe 'menu-aberto' ao clicar
+          
             menuPrincipal.classList.toggle('menu-aberto');
-            
-            // CORREÇÃO: Esta verificação TEM de estar dentro do clique!
-            // E a classe tem de ser a mesma usada no CSS ('menu-aberto')
+    
             if (menuPrincipal.classList.contains('menu-aberto')) {
                 btnMobile.innerText = "✖ Fechar";
             } else {
@@ -18,37 +16,35 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
             
-       const metricCards = document.querySelectorAll('.metric-card');
+    const metricCards = document.querySelectorAll('.metric-card');
     
-    // Elementos do Modal do Dashboard
+
     const dashModal = document.getElementById('dashboard-modal');
     const dashModalTitle = document.getElementById('modal-metric-title');
     const dashModalValue = document.getElementById('modal-metric-value');
     const btnCloseDashModal = document.getElementById('btn-close-dash-modal');
 
-    // Só executa se estivermos na página do Dashboard e a modal existir
+    
     if (metricCards.length > 0 && dashModal) {
         metricCards.forEach(function(card) {
             card.addEventListener('click', function() {
-                // Captura os elementos internos de forma segura
+               
                 const elementoTitulo = this.querySelector('h3');
+
                 const elementoValor = this.querySelector('.metric-value');
-                
-                // Só executa a cópia se ambos os elementos existirem dentro do card clicado
+             
                 if (elementoTitulo && elementoValor) {
                     const tituloMetrica = elementoTitulo.innerText;
                     
-                    // Captura o HTML interno (preservando a tag span e a cor vermelha)
+                   
                     const valorMetrica = elementoValor.innerHTML;
-                    
-                    // Injeta de forma segura na Janela Modal
+                  
                     if (dashModalTitle) dashModalTitle.innerText = tituloMetrica;
                     if (dashModalValue) dashModalValue.innerHTML = valorMetrica;
 
-                    // Mostra o Modal mudando o display para flex
                     dashModal.style.display = 'flex';
 
-                    // Guarda a última métrica clicada no LocalStorage
+                 
                     const dadosInteracao = {
                         metrica: tituloMetrica,
                         dataVisualizacao: new Date().toLocaleString()
@@ -58,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        // Evento para fechar o modal do dashboard ao clicar em "Entendido"
+    
         if (btnCloseDashModal) {
             btnCloseDashModal.addEventListener('click', function() {
                 dashModal.style.display = 'none';
@@ -66,14 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    
-    // Captura dos Ecrãs (Passos) e Loading
+
     const loadingIA = document.getElementById('loading-ia');
     const step0 = document.getElementById('step-0');
     const step1 = document.getElementById('step-1');
     const step2 = document.getElementById('step-2');
     
-    // Captura dos Elementos Interativos
     const btnStartSim = document.getElementById('btn-start-sim');
     const inputActionName = document.getElementById('custom-action-name');
     const categoryCards = document.querySelectorAll('.category-card');
@@ -84,19 +78,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const fileNameDisplay = document.getElementById('file-name-display');
     const erroTitulo = document.getElementById('erro-titulo');
     
-    // Áreas de Estado e Modal
+
     const valMessageSim = document.getElementById('validation-message-sim');
     const ecoProgress = document.getElementById('eco-progress');
     const ecoPointsText = document.getElementById('eco-points-text');
     const successModal = document.getElementById('success-modal');
     const btnCloseModal = document.getElementById('btn-close-modal');
 
-    // Variáveis de Estado da Simulação
+
     let currentSimPoints = 0;
     let pendingPoints = 0;
     let customActionText = "";
 
-    // PASSO 0 -> PASSO 1
+
     if (btnStartSim) {
         btnStartSim.addEventListener('click', function() {
             step0.style.display = 'none';
@@ -105,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-       if (categoryCards.length > 0) {
+    if (categoryCards.length > 0) {
         categoryCards.forEach(function(card) {
             card.addEventListener('click', function() {
                 categoryCards.forEach(function(c) { c.classList.remove('selected'); });
@@ -116,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-        if (btnGoStep2) {
+    if (btnGoStep2) {
         btnGoStep2.addEventListener('click', function() {
             customActionText = inputActionName.value.trim();
             
@@ -139,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+  
     if (cameraUpload) {
         cameraUpload.addEventListener('change', function() {
             if (this.files && this.files.length > 0) {
@@ -194,8 +189,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         inputActionName.value = ""; 
                         categoryCards.forEach(function(c) { c.classList.remove('selected'); }); 
                         btnGoStep2.style.display = 'none'; 
-                        fileNameDisplay.style.display = 'none'; // Esconde o nome do arquivo velho
-                        btnFakeUpload.style.display = 'none'; // Esconde o botão de upload velho
+                        fileNameDisplay.style.display = 'none';
+                        btnFakeUpload.style.display = 'none'; 
                         
                         step1.style.display = 'block';
                         valMessageSim.innerText = "Aguardando nova ação para alcançar os 100 pontos...";
@@ -206,7 +201,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
     
-       if (btnCloseModal) {
+   
+    if (btnCloseModal) {
         btnCloseModal.addEventListener('click', function() {
             successModal.style.display = 'none';
             

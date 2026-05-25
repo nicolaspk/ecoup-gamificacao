@@ -27,3 +27,82 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="content-section">
+            <h2 class="section-title">Análise de Dados e Solução ECOUP</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;">O painel abaixo apresenta o diagnóstico do problema enfrentado pela SoulUp e como o nosso sistema atua para reverter este cenário.</p>
+
+            <div class="dashboard-metrics" style="margin-bottom: 50px; gap: 25px;">
+                <article class="metric-card" data-metric="Total" style="padding: 30px 20px;">
+                    <h3 style="font-size: 1.1rem;">Total de Usuários</h3>
+                    <p class="metric-value" style="font-size: 2.2rem;">61.242</p>
+                </article>
+                <article class="metric-card alerta" data-metric="Ativos" style="padding: 30px 20px;">
+                    <h3 style="font-size: 1.1rem;">Usuários Ativos</h3>
+                    <p class="metric-value" style="font-size: 2.2rem;">9.599 <span style="font-size: 1.2rem;">(-77%)</span></p>
+                </article>
+                <article class="metric-card alerta" data-metric="Novos" style="padding: 30px 20px;">
+                    <h3 style="font-size: 1.1rem;">Novos Usuários</h3>
+                    <p class="metric-value" style="font-size: 2.2rem;">2.875 <span style="font-size: 1.2rem;">(-68%)</span></p>
+                </article>
+                <article class="metric-card alerta" data-metric="Eventos" style="padding: 30px 20px;">
+                    <h3 style="font-size: 1.1rem;">Ações (Eventos)</h3>
+                    <p class="metric-value" style="font-size: 2.2rem;">183.057 <span style="font-size: 1.2rem;">(-75%)</span></p>
+                </article>
+            </div>
+
+            <div class="dashboard-analysis" style="gap: 40px; margin-top: 20px;">
+                <div class="chart-container" style="padding: 40px 30px;">
+                    <h3 style="color: var(--cor-primaria); margin-bottom: 25px; font-size: 1.4rem;">Volume de Eventos por Mês (2026)</h3>
+                    <div class="css-chart" style="gap: 20px;">
+                        <div class="chart-row">
+                            <span class="chart-label" style="font-size: 1.1rem;">Janeiro</span>
+                            <div class="chart-bar" style="width: 50%; padding: 10px 15px;">50.823</div>
+                        </div>
+                        <div class="chart-row">
+                            <span class="chart-label" style="font-size: 1.1rem;">Fevereiro</span>
+                            <div class="chart-bar" style="width: 47%; padding: 10px 15px;">47.241</div>
+                        </div>
+                        <div class="chart-row">
+                            <span class="chart-label" style="font-size: 1.1rem;">Março</span>
+                            <div class="chart-bar" style="width: 70%; padding: 10px 15px;">70.420</div>
+                        </div>
+                        <div class="chart-row">
+                            <span class="chart-label" style="font-size: 1.1rem;">Abril</span>
+                            <div class="chart-bar bar-alerta" style="width: 14%; padding: 10px 15px;">14.573 (Queda)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-container" style="padding: 40px 30px;">
+                    <h3 style="color: var(--cor-primaria); margin-bottom: 25px; font-size: 1.4rem;">A Nossa Solução</h3>
+                    <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;"><strong>O Problema:</strong> Os dados indicam que a partir de Abril houve uma queda drástica e generalizada, demonstrando fadiga de decisão e falta de incentivo a longo prazo.</p>
+                    <p style="font-size: 1.1rem; line-height: 1.6;">
+  <strong>Como resolvemos:</strong> A ECOUP aposta em uma 
+  <em>gamificação sustentável</em>. Cada ação realizada gera 
+  <strong>Pontos Ecoa</strong>, que podem ser convertidos em benefícios 
+  na conta de luz. Dessa forma, os usuários enxergam vantagens reais no 
+  dia a dia, aumentando o engajamento, reduzindo o abandono da plataforma 
+  e incentivando uma participação contínua.
+</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="dashboard-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-icon" style="font-size: 4rem;" aria-hidden="true">📊</div>
+            <h2 id="modal-metric-title" style="margin-bottom: 10px;">Métrica</h2>
+            <p id="modal-metric-value" style="font-size: 2.2rem; color: var(--cor-primaria); font-weight: bold; margin-bottom: 20px; text-shadow: var(--brilho-neon);">Valor</p>
+            <p style="font-size: 1.1rem; color: var(--cor-texto-secundario); margin-bottom: 30px; line-height: 1.6;">A nossa gamificação atua para melhorar e estabilizar este indicador corporativo.</p>
+            <button id="btn-close-dash-modal" class="btn-primary" style="padding: 12px 30px; font-size: 1.1rem;">Entendido</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido pela <strong>ECOUP</strong> para o desafio SoulUp. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
