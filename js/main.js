@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
             valMessageSim.style.color = "#a0aab2";
             if (loadingIA) loadingIA.style.display = 'flex'; 
 
+            // Simulação de processamento assíncrono via setTimeout para validar a evidência
             setTimeout(function() {
                 step2.style.display = 'none';
                 
@@ -180,11 +181,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 valMessageSim.innerText = `Evidência Validada! Ganhou +${pendingPoints} Pontos Ecoa! 🌿`;
                 valMessageSim.style.color = "var(--cor-primaria)"; 
 
+                // Lógica de verificação da meta: dispara modal de sucesso se atingir 100 pontos
                 if (currentSimPoints >= 100) {
                     setTimeout(function() {
                         successModal.style.display = 'flex';
                     }, 800); 
                 } else {
+                    // Reseta interface para nova entrada caso meta não seja alcançada
                     setTimeout(function() {
                         inputActionName.value = ""; 
                         categoryCards.forEach(function(c) { c.classList.remove('selected'); }); 
@@ -206,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnCloseModal.addEventListener('click', function() {
             successModal.style.display = 'none';
             
+            // Limpeza total do estado ao iniciar um novo ciclo
             currentSimPoints = 0;
             ecoProgress.style.width = '0%';
             ecoPointsText.innerText = '0 / 100';

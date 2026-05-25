@@ -22,7 +22,6 @@
     gap: 20px;
 }
 
-/* Painel de Status (Barra de Progresso) */
 .simulation-status-area {
     display: flex;
     flex-direction: column;
@@ -62,4 +61,85 @@
     border-radius: 20px;
     transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 0 12px rgba(0, 210, 138, 0.4);
+}
+
+.category-card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--cor-superficie);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgba(0, 210, 138, 0.25);
+}
+
+.category-card.active {
+    border: 1px solid var(--cor-primaria);
+    box-shadow: var(--brilho-neon);
+}
+
+.sim-step {
+    display: none;
+}
+
+.sim-step.active {
+    display: block;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.sim-step {
+    display: none;
+}
+
+.sim-step.active {
+    display: block;
+}
+
+.category-card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--cor-superficie);
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.category-card.active {
+    border: 1px solid var(--cor-primaria);
+    box-shadow: var(--brilho-neon);
+}
+
+.loading-container .dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    animation: blink 1.2s infinite ease-in-out;
+}
+
+.loading-container .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-container .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0%, 80%, 100% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 1;
+    }
 }
