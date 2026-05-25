@@ -15,7 +15,6 @@
     letter-spacing: 1px;
 }
 
-
 .btn-primary:hover {
     background-color: var(--cor-primaria-hover);
     transform: translateY(-3px);

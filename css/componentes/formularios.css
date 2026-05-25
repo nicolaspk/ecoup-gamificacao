@@ -1,0 +1,77 @@
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--cor-fundo-app);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: var(--cor-texto-principal);
+    font-size: 1.05rem;
+    transition: var(--transicao);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 12px rgba(0, 210, 138, 0.3);
+}
+
+.upload-sim-card {
+    background-color: var(--cor-fundo-app);
+    border: 2px dashed var(--cor-primaria);
+    border-radius: 12px;
+    transition: var(--transicao);
+}
+
+.validation-box-sim {
+    background-color: #060b19;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: var(--sombra-card);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-title {
+    color: var(--cor-texto-principal);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-title span {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-app);
+
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    flex-shrink: 0; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.15rem;
+    box-shadow: var(--brilho-neon);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.dot:nth-child(1) { animation-delay: -0.32s; }
+.dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); box-shadow: var(--brilho-neon); }
+}

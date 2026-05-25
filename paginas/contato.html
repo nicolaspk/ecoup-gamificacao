@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECOUP</title>
+    <title>ECOUP - Contato</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="logo-container">
+             <h1>ECOUP</h1>
+        </div>
+        
+        <button id="btn-mobile" class="btn-mobile" aria-label="Abrir ou fechar menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+        
+        <nav id="menu-principal" aria-label="Navegação Principal">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
+                <li><a href="integrantes.html">Quem Somos</a></li>
+                <li><a href="simulador.html">Protótipo</a></li>
+                <li><a href="dashboard.html">Solução (Dashboard)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section contact-section">
+            <h2 class="section-title">Fale com a ECOUP</h2>
+            <p class="contact-subtitle">Tem dúvidas sobre a implementação da gamificação ou deseja suporte comercial? Entre em contato diretamente com a nossa equipe corporativa.</p>
+            
+            <div class="feature-card contact-card">
+                <div class="icon-placeholder" aria-hidden="true">📧</div>
+                <h3>Envie um e-mail para:</h3>
+                <p class="contact-email">materiafiap@gmail.com</p>
+                
+                <a href="https://mail.google.com/" class="btn-primary" target="_blank" rel="noopener noreferrer">Abrir E-mail</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido pela <strong>ECOUP</strong> para o desafio SoulUp. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

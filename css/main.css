@@ -1,0 +1,28 @@
+
+@import url('base/reset.css');
+@import url('base/variaveis.css');
+@import url('base/global.css');
+
+
+@import url('layout/cabecalho.css');
+@import url('layout/navegacao.css');
+@import url('layout/rodape.css');
+
+
+@import url('componentes/botoes.css');
+@import url('componentes/cards.css');
+@import url('componentes/formularios.css');
+@import url('componentes/graficos.css');
+@import url('componentes/modal.css');
+
+
+@import url('pages/home.css');
+@import url('pages/dashboard.css');
+@import url('pages/faq.css');
+@import url('pages/sobre.css');
+@import url('pages/integrantes.css');
+@import url('pages/contato.css');
+@import url('pages/simulador.css');
+
+@import url('responsividade/tablet.css');
+@import url('responsividade/mobile.css');

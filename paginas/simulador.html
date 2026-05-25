@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOUP - Simulador Prático da Solução</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>ECOUP</h1>
+        </div>
+        
+        <button id="btn-mobile" class="btn-mobile" aria-label="Abrir ou fechar menu de navegação" aria-expanded="false" aria-controls="menu-principal">☰ Menu</button>
+        
+        <nav id="menu-principal" aria-label="Navegação Principal">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="integrantes.html">Quem Somos</a></li>
+                <li><a href="simulador.html" class="ativo destaque-menu" aria-current="page">Protótipo</a></li>
+                <li><a href="dashboard.html">Solução (Dashboard)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2 class="section-title">Protótipo da Jornada do Usuário</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px;">Siga o fluxo interativo para entender como a ECOUP valida ações customizadas e recompensa os usuários da SoulUp.</p>
+            
+            <div class="simulador-layout">
+                
+                <div class="simulation-main-area">
+
+                    <div id="step-0" class="sim-step active">
+                        <div class="feature-card welcome-card" style="padding: 40px 20px;">
+                            <div class="icon-placeholder" style="font-size: 4rem; margin-bottom: 20px;" aria-hidden="true">🎮</div>
+                            <h3 style="margin-bottom: 20px; font-size: 1.8rem;">Bem-vindo ao Protótipo ECOUP</h3>
+                            <p style="margin-bottom: 30px; font-size: 1.1rem; line-height: 1.8;">Assuma o papel de um utilizador. Você irá registrar o nome da sua atitude sustentável, escolher a categoria e enviar um arquivo da galeria para a nossa Inteligência Artificial analisar.</p>
+                            <button id="btn-start-sim" class="btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Iniciar Simulação</button>
+                        </div>
+                    </div>
+
+                    <div id="step-1" class="sim-step" style="display: none;">
+                        <h3 class="step-title" style="margin-bottom: 30px;"><span>1</span> Qual foi sua atitude sustentável?</h3>
+                        
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <label for="custom-action-name" style="color: var(--cor-texto-principal); display: block; margin-bottom: 10px; font-size: 1.1rem;">Título / Nome da Ação:</label>
+                            <input type="text" id="custom-action-name" placeholder="Ex: Fui de bicicleta para a faculdade..." autocomplete="off" style="width: 100%; padding: 15px; font-size: 1.1rem; border-radius: 8px;">
+                            
+                            <span id="erro-titulo" style="color: var(--cor-alerta); font-size: 0.95rem; font-weight: bold; display: none; margin-top: 8px;">
+                                ⚠️ Você precisa digitar um título para avançar!
+                            </span>
+                        </div>
+
+                        <p style="margin-bottom: 20px; color: var(--cor-texto-secundario); font-weight: bold; font-size: 1.1rem;">Selecione a categoria para cálculo de impacto:</p>
+                        
+                        <div class="acoes-grid-sim">
+                            <div class="category-card" data-pontos="30" role="button" tabindex="0">
+                                <h4 aria-hidden="true">🚲</h4><h4>Mobilidade</h4>
+                                <span>Até 30 pts</span>
+                            </div>
+                            <div class="category-card" data-pontos="40" role="button" tabindex="0">
+                                <h4 aria-hidden="true">♻️</h4><h4>Reciclagem</h4>
+                                <span>Até 40 pts</span>
+                            </div>
+                            <div class="category-card" data-pontos="50" role="button" tabindex="0">
+                                <h4 aria-hidden="true">💡</h4><h4>Energia</h4>
+                                <span>Até 50 pts</span>
+                            </div>
+                            <div class="category-card" data-pontos="20" role="button" tabindex="0">
+                                <h4 aria-hidden="true">🌱</h4><h4>Outros</h4>
+                                <span>Até 20 pts</span>
+                            </div>
+                        </div>
+
+                        <button id="btn-go-step2" class="btn-primary" style="margin-top: 40px; width: 100%; display: none; padding: 15px; font-size: 1.1rem;">Avançar para Envio</button>
+                    </div>
+
+                    <div id="step-2" class="sim-step" style="display: none;">
+                        <h3 class="step-title" style="margin-bottom: 30px;"><span>2</span> Evidência Real</h3>
+                        
+                        <div class="upload-sim-card" style="padding: 50px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px;">
+                            <div class="icon-placeholder" style="font-size: 4rem; margin: 0;" aria-hidden="true">📸</div>
+                            
+                            <div>
+                                <p style="font-size: 1.1rem; margin-bottom: 5px;">Ação selecionada:</p>
+                                <h4 id="selected-action-display" class="text-neon" style="font-size: 1.5rem; word-break: break-all; margin: 0;">---</h4>
+                            </div>
+                            
+                            <p style="color: var(--cor-texto-secundario); font-size: 1.1rem; margin-bottom: 10px;">
+                                Envie uma foto ou vídeo da galeria para validar sua atitude sustentável.
+                            </p>
+                            
+                            <label for="camera-upload" class="btn-primary" style="cursor: pointer; width: 100%; max-width: 350px; margin: 0;">
+                                📁 Escolher da Galeria
+                            </label>
+                            <input type="file" id="camera-upload" accept="video/*,image/*" style="display: none;">
+
+                            <p id="file-name-display" style="color: var(--cor-primaria); font-weight: bold; display: none; font-size: 1.1rem; margin: 0;">
+                                ✓ Arquivo carregado com sucesso!
+                            </p>
+
+                            <button id="btn-fake-upload" class="btn-primary" style="display: none; width: 100%; max-width: 350px; margin: 0; background-color: #00b377;">
+                                Analisar Evidência na IA
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <aside class="simulation-status-area">
+                    <div class="progresso-container" style="margin-bottom: 30px;">
+                        <div class="progresso-header" style="margin-bottom: 20px;">
+                            <h4 style="font-size: 1.2rem;">Seus Pontos Ecoa</h4>
+                            <span id="eco-points-text" style="font-size: 1.5rem;">0 / 100</span>
+                        </div>
+                        <div class="progress-bar-bg" style="height: 30px; margin-bottom: 20px;">
+                            <div id="eco-progress" class="progress-fill" style="width: 0%; height: 100%;"></div>
+                        </div>
+                        <p class="reward-desc" style="font-size: 1rem; line-height: 1.5;">Atingir 100 pontos desbloqueia o subsídio na conta de energia!</p>
+                    </div>
+
+                    <div id="validation-box-sim" class="validation-box-sim" style="padding: 30px 20px; flex-direction: column;">
+                        <p id="validation-message-sim" style="font-size: 1.1rem; line-height: 1.5; text-align: center;">Aguardando o início da jornada...</p>
+                        
+                        <div id="loading-ia" class="loading-container" style="display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 15px;" aria-hidden="true">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="success-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-icon" style="font-size: 5rem;" aria-hidden="true">🏆</div>
+            <h2 style="margin-bottom: 15px;">PARABÉNS!</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 20px;">Você atingiu 100 Pontos Ecoa!</p>
+            <p style="font-size: 1.1rem; color: var(--cor-texto-secundario); margin-bottom: 30px; line-height: 1.6;">O seu subsídio para a conta de energia elétrica foi desbloqueado com sucesso no sistema da SoulUp!</p>
+            <button id="btn-close-modal" class="btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">Começar Novo Ciclo</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Desenvolvido pela <strong>ECOUP</strong> para o desafio SoulUp. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
