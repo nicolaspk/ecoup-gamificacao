@@ -1,40 +1,114 @@
 # 🌿 ECOUP - Sistema de Gamificação Sustentável para SoulUp
 
 ## 📖 Título e Descrição do Projeto
-**ECOUP Gamification System**: Uma solução digital desenvolvida pela startup ECOUP para a plataforma SoulUp. O projeto consiste num módulo web responsivo focado em avaliar, pontuar e incentivar ações sustentáveis realizadas pelos utilizadores. O sistema visa reverter quedas de engajamento através da gamificação baseada em "Pontos Ecoa", promovendo recompensas reais como subsídios na conta de luz.
 
-## 🚀 Link do Repositório
-Acesso público ao código-fonte do projeto no GitHub:
-[Acessar o repositório ECOUP - Gamificação](https://github.com/nicolaspk/ecoup-gamificacao.git)
+**ECOUP Gamification System** é uma solução web desenvolvida para a plataforma SoulUp, com foco em aumentar o engajamento de usuários através de gamificação de ações sustentáveis.
 
-## 📸 Imagens e Representação do Projeto
-Abaixo encontram-se as principais interfaces do sistema que demonstram o seu funcionamento visual e interativo:
-* ![Página Inicial do Projeto](img/simulador.png)
-* ![Dashboard de Análise](img/dashboard.png)
-* ![Simulador Interativo](img/interacao-simulador.png)
+O sistema simula a validação de atitudes ecológicas realizadas pelos usuários e transforma essas ações em **Pontos Ecoa**, que podem ser acumulados e convertidos em benefícios reais, como subsídios na conta de energia.
 
-## 🛠️ Tecnologias Utilizadas
-O projeto foi integralmente construído utilizando tecnologias nativas, sem dependência de bibliotecas externas:
-* **HTML5:** Estruturação semântica, organização de conteúdo e formulários acessíveis (com validação via ARIA labels).
-* **CSS3:** Estilização modular com CSS Grid e Flexbox, Media Queries para adaptação responsiva (Mobile, Tablet, Desktop) e interface em *Dark Theme UI*.
-* **JavaScript:** Manipulação dinâmica do DOM, tratamento de eventos interativos e persistência de dados de simulação utilizando a *Web Storage API* (`LocalStorage` e `SessionStorage`).
+O objetivo principal é resolver a queda de engajamento da plataforma através de uma experiência interativa, moderna e responsiva.
 
-## 📂 Estrutura de Pastas
-O projeto segue uma arquitetura limpa e organizada na raiz:
+---
 
-/css       -> Arquivo de estilização principal (style.css)
-/img       -> Imagens, fotos dos integrantes e ícones
-/js        -> Lógica de interatividade, eventos e LocalStorage (main.js)
-/paginas   -> Arquivos HTML secundários (contato.html, dashboard.html, faq.html, integrantes.html, simulador.html, sobre.html)
-index.html -> Página inicial na raiz do projeto
-README.md  -> Guia técnico e documentação do projeto
+## 🚀 Como executar o projeto
 
-## 👥 Autores e Créditos (Equipe ECOUP)
-* **Maria Eduarda Escandor** (RM: 568216) - Turma: 1TDSPO - [LinkedIn](https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/) | [GitHub](https://github.com/mariabatistaescandor-gif)
-* **Erick Menezes** (RM: 570325) - Turma: 1TDSPF - [LinkedIn](https://www.linkedin.com/in/erick-menezes-b53009232/) | [GitHub](https://github.com/Erick488-maker)
-* **Katerine Hildebrand** (RM: 569809) - Turma: 1TDSPF - [LinkedIn](https://www.linkedin.com/in/katerine-hildebrand-8928752a3/) | [GitHub](https://github.com/katpeaga)
-* **Maria Eduarda Lopes de Lima** (RM: 572425) - Turma: 1TDSPO - [LinkedIn](https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/) | [GitHub](https://github.com/mariaeduardaalima)
-* **Nicolas Sousa** (RM: 574141) - Turma: 1TDSPH - [LinkedIn](https://www.linkedin.com/in/nicolas-sousaa/) | [GitHub](https://github.com/nicolaspk)
+1. Faça o download ou clone o repositório:
+git clone https://github.com/nicolaspk/ecoup-gamificacao.git
+
+2. Acesse a pasta do projeto
+
+3. Abra o arquivo:
+index.html
+
+ou utilize a extensão **Live Server (VS Code)** para melhor experiência.
+
+---
+
+## ⚙️ Funcionalidades implementadas
+
+- Menu responsivo (hambúrguer com JavaScript)
+- Sistema de gamificação com Pontos Ecoa
+- Simulador interativo de ações sustentáveis
+- Validação de entrada de dados (formulários)
+- Upload simulado de evidências (imagem/vídeo)
+- Simulação de análise por IA
+- Dashboard interativo com métricas clicáveis
+- Modal dinâmico para detalhes de métricas
+- Persistência de dados via LocalStorage
+- Feedback visual de interação do usuário
+
+---
+
+## 📱 Responsividade
+
+O projeto foi desenvolvido com foco em adaptação para diferentes dispositivos:
+
+- Mobile (até 480px): menu adaptado e layout empilhado
+- Tablet (768px+): reorganização de colunas e espaçamentos
+- Desktop (992px+): layout completo com grid estruturado
+
+---
+
+## 🧠 Objetivo técnico
+
+Este projeto utiliza tecnologias front-end puras para simular um sistema real:
+
+- HTML5 com estrutura semântica
+- CSS3 com Grid e Flexbox
+- JavaScript puro para interatividade
+- Manipulação de DOM
+- Eventos (click, input, change)
+- Armazenamento local (LocalStorage)
+- Componentização de interface
+
+---
+
+## 📂 Estrutura de pastas
+
+/css        -> estilos (main.css, dashboard.css)
+/js         -> scripts (main.js)
+/img        -> imagens do projeto
+/paginas    -> páginas secundárias
+index.html  -> página inicial
+README.md   -> documentação do projeto
+
+---
+
+## 👥 Autores e Créditos
+
+- **Maria Eduarda Escandor** (RM: 568216)  
+  https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/ | https://github.com/mariabatistaescandor-gif
+
+- **Erick Menezes** (RM: 570325)  
+  https://www.linkedin.com/in/erick-menezes-b53009232/ | https://github.com/Erick488-maker
+
+- **Katerine Hildebrand** (RM: 569809)  
+  https://www.linkedin.com/in/katerine-hildebrand-8928752a3/ | https://github.com/katpeaga
+
+- **Maria Eduarda Lopes de Lima** (RM: 572425)  
+  https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/ | https://github.com/mariaeduardaalima
+
+- **Nicolas Sousa** (RM: 574141)  
+  https://www.linkedin.com/in/nicolas-sousaa/ | https://github.com/nicolaspk
+
+---
+
+## 📸 Imagens do projeto
+
+![Home](img/simulador.png)
+
+![Dashboard](img/dashboard.png)
+
+![Simulador](img/interacao-simulador.png)
+
+---
 
 ## 📧 Contato
-Para suporte ou dúvidas comerciais: materiafiap@gmail.com
+
+materiafiap@gmail.com
+
+---
+
+## 🔗 Repositório
+
+https://github.com/nicolaspk/ecoup-gamificacao.git

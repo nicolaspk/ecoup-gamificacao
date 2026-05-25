@@ -11,3 +11,66 @@
     gap: 40px;
     margin-top: 20px;
 }
+
+.metric-card {
+    padding: 30px 20px;
+}
+
+.metric-card.alerta {
+    border-left: 4px solid #ff4d4d;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.metric-value span {
+    font-size: 1.2rem;
+}
+
+.chart-container {
+    padding: 40px 30px;
+}
+
+.css-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chart-label {
+    font-size: 1.1rem;
+    min-width: 100px;
+}
+
+.chart-bar {
+    padding: 10px 15px;
+    background: var(--cor-primaria);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.chart-bar.bar-alerta {
+    background: #ff4d4d;
+}
+
+.solution-container {
+    padding: 40px 30px;
+}
+
+.solution-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.solution-container strong {
+    color: var(--cor-primaria);
+}
